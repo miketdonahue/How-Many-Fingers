@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="How_Many_Fingers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Many Fingers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dae-LD-hTn">
+                                <rect key="frame" x="167" y="35" width="267" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="Ni2-E9-6g0"/>
+                                    <constraint firstAttribute="height" constant="44" id="QR6-eM-h99"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.47556719629999999" green="0.064784748500000003" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess how many fingers the computer is holding up" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tef-Q0-dEm">
+                                <rect key="frame" x="16" y="109" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSf-IM-niM">
+                                <rect key="frame" x="252" y="163" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="WeE-pu-TwP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please guess a number between 0 and 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjY-e3-IXa">
+                                <rect key="frame" x="16" y="201" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SDP-KK-BH6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8Z-Zw-zp6">
+                                <rect key="frame" x="253" y="246" width="95" height="30"/>
+                                <color key="backgroundColor" red="0.47556719628500221" green="0.06478474850233279" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="f8n-3D-xzP"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Guess">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="am7-Ri-OVs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l28-6v-0RV">
+                                <rect key="frame" x="16" y="409" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Vgi-aJ-5mx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwO-gf-Cpd">
+                                <rect key="frame" x="258" y="298" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="Hm4-dJ-vKB"/>
+                                </constraints>
+                                <state key="normal" title="New Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KD4-dt-Ufm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MjY-e3-IXa" firstAttribute="centerX" secondItem="H8Z-Zw-zp6" secondAttribute="centerX" id="16E-Fq-d0U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l28-6v-0RV" secondAttribute="bottom" constant="170" id="1KL-hd-22D"/>
+                            <constraint firstItem="MjY-e3-IXa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="379-Rd-CL9"/>
+                            <constraint firstItem="wSf-IM-niM" firstAttribute="centerX" secondItem="MjY-e3-IXa" secondAttribute="centerX" id="8Pq-iA-mlF"/>
+                            <constraint firstItem="MjY-e3-IXa" firstAttribute="leading" secondItem="l28-6v-0RV" secondAttribute="leading" id="IgO-lQ-rxi"/>
+                            <constraint firstItem="wSf-IM-niM" firstAttribute="top" secondItem="Tef-Q0-dEm" secondAttribute="bottom" constant="33" id="Lix-V4-BDW"/>
+                            <constraint firstItem="H8Z-Zw-zp6" firstAttribute="top" secondItem="MjY-e3-IXa" secondAttribute="bottom" constant="24" id="MS8-kT-XFA"/>
+                            <constraint firstItem="pwO-gf-Cpd" firstAttribute="centerX" secondItem="H8Z-Zw-zp6" secondAttribute="centerX" id="RBm-HQ-GSn"/>
+                            <constraint firstItem="pwO-gf-Cpd" firstAttribute="top" secondItem="H8Z-Zw-zp6" secondAttribute="bottom" constant="22" id="Z2p-Dy-0jS"/>
+                            <constraint firstItem="Tef-Q0-dEm" firstAttribute="top" secondItem="dae-LD-hTn" secondAttribute="bottom" constant="30" id="dLc-6X-uP7"/>
+                            <constraint firstItem="MjY-e3-IXa" firstAttribute="top" secondItem="wSf-IM-niM" secondAttribute="bottom" constant="8" symbolic="YES" id="fH7-b4-q8h"/>
+                            <constraint firstItem="dae-LD-hTn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="mV8-L6-gcS"/>
+                            <constraint firstItem="Tef-Q0-dEm" firstAttribute="trailing" secondItem="MjY-e3-IXa" secondAttribute="trailing" id="oLG-aa-eYB"/>
+                            <constraint firstItem="MjY-e3-IXa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pMX-Nd-SWu"/>
+                            <constraint firstItem="MjY-e3-IXa" firstAttribute="trailing" secondItem="l28-6v-0RV" secondAttribute="trailing" id="rQU-20-Zgn"/>
+                            <constraint firstItem="MjY-e3-IXa" firstAttribute="leading" secondItem="Tef-Q0-dEm" secondAttribute="leading" id="tBb-Za-YK3"/>
+                            <constraint firstItem="Tef-Q0-dEm" firstAttribute="centerX" secondItem="dae-LD-hTn" secondAttribute="centerX" id="y0i-W8-Hoq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guessInput" destination="wSf-IM-niM" id="Igc-UP-Lxq"/>
+                        <outlet property="newGame" destination="pwO-gf-Cpd" id="Sca-MW-Ctc"/>
+                        <outlet property="result" destination="l28-6v-0RV" id="osu-Qg-L5m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
